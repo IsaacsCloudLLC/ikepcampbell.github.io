@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="assets/css/templatemo-style.css" />
   <link rel="stylesheet" href="assets/css/owl.css" />
   <link rel="stylesheet" href="assets/css/lightbox.css" />
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -62,7 +61,7 @@
     <section class="section about-me" data-section="section1">
       <div class="container">
         <div class="section-heading">
-          <h2>About Me</h2>
+          <h2>About Me ☁️</h2>
           <div class="line-dec"></div>
           <span>Thanks for stopping by! I graduated from the University of Northern Iowa in 2019. Since then, I have
             built, maintained, and ensured the reliability and resilience of systems with multiple organizations. I
@@ -78,7 +77,7 @@
     <section class="section skillset" data-section="section2">
       <div class="container">
         <div class="section-heading">
-          <h2>Skills</h2>
+          <h2>Skills 🖥️</h2>
           <div class="line-dec"></div>
           <span>My journey into the world DevOps has been characterized by continuous
             learning, exploring, and just trying different things out. Along the way I started refining skills that
@@ -134,7 +133,7 @@
     <section class="section my-work" data-section="section3">
       <div class="container">
         <div class="section-heading">
-          <h2>Portfolio</h2>
+          <h2>Portfolio 💼</h2>
           <div class="line-dec"></div>
           <span>I have a lot of random ideas and interests. Some of these ideas eventually end up on GitHub. I am making
             an effort to put more time into creative ideas outside of the workplace. Some of these interests include
@@ -163,11 +162,10 @@
                     <img src="assets/images/spirithaus.png">
                     <figcaption>
                       <h4>Spirithaus</h4>
-                      <span>Competed in first ever game jam with 2 other developers. I developed the monster
-                        (Slime/skeleton/final boss) attack
-                        patterns, movements, and balancing! I drew the pixel art for the skeleton. Also programmed
-                        attack cycles of the hero,
-                        menu options, and beta testing.</span>
+                      <span>I competed in my first-ever game jam with two other developers. I developed the attack
+                        patterns, movements, and balancing for the monster (Slime/Skeleton/Final Boss)! I also drew the
+                        pixel art for the skeleton and programmed the attack cycles of the hero, menu options, and beta
+                        testing.</span>
                     </figcaption>
                   </figure>
                 </a>
@@ -181,52 +179,12 @@
     <section class="section contact-me" data-section="section4">
       <div class="container">
         <div class="section-heading">
-          <h2>Contact Me</h2>
+          <h2>Contact Me 📧</h2>
           <div class="line-dec"></div>
-          <span>I'm always down to chat, if you have something you are working on and think I'd be a good fit, let's get
-            in touch! I'm always looking for new things to do. </span>
-        </div>
-        <div class="row">
-          <div class="right-content">
-            <div class="container">
-              <form id="contact" action="" method="post">
-                <div class="row">
-                  <div class="col-md-6">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Your name..."
-                        required="" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-6">
-                    <fieldset>
-                      <input name="email" type="email" class="form-control" id="email" placeholder="Your email..."
-                        required="" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..."
-                        required="" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
-                        required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="button">
-                        Send Message
-                      </button>
-                    </fieldset>
-                  </div>
-                  <div class="g-recaptcha" data-sitekey="6LdiVWcmAAAAABXRdq_Am84puJnxfiA8NjIhld0E"></div>
-                </div>
-              </form>
-            </div>
-          </div>
+          <span>I'm always down to chat. If you want to talk about technology, dogs, traveling, fitness or anything
+            else, i'm your guy. If you have something you are working on and think I'd be a good fit, let's get
+            in touch! I'm always looking for new things to do. <br> If you are interested, please send me an email at
+            <strong>cloudisaaccampbell@gmail.com</strong>, and I'll get back to you! </span>
         </div>
       </div>
     </section>
@@ -241,61 +199,7 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/lightbox.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script>
-    //according to loftblog tut
-    $(".main-menu li:first").addClass("active");
-
-    var showSection = function showSection(section, isAnimate) {
-      var direction = section.replace(/#/, ""),
-        reqSection = $(".section").filter(
-          '[data-section="' + direction + '"]'
-        ),
-        reqSectionPos = reqSection.offset().top - 0;
-
-      if (isAnimate) {
-        $("body, html").animate(
-          {
-            scrollTop: reqSectionPos
-          },
-          800
-        );
-      } else {
-        $("body, html").scrollTop(reqSectionPos);
-      }
-    };
-
-    var checkSection = function checkSection() {
-      $(".section").each(function () {
-        var $this = $(this),
-          topEdge = $this.offset().top - 80,
-          bottomEdge = topEdge + $this.height(),
-          wScroll = $(window).scrollTop();
-        if (topEdge < wScroll && bottomEdge > wScroll) {
-          var currentId = $this.data("section"),
-            reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-          reqLink
-            .closest("li")
-            .addClass("active")
-            .siblings()
-            .removeClass("active");
-        }
-      });
-    };
-
-    $(".main-menu").on("click", "a", function (e) {
-      var menuChoice = $(this).attr("href")
-      var canDownload = menuChoice.endsWith(".pdf") || menuChoice.endsWith(".docx")
-      if (!canDownload) {
-        e.preventDefault();
-        showSection(menuChoice, true);
-      }
-
-    });
-
-    $(window).scroll(function () {
-      checkSection();
-    });
-  </script>
+  <script src="assets/js/sections.js"></script>
 </body>
 
 </html>
