@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { experiences } from '@/utils/data/experience';
 import Card from '../../helper/card';
 
-function Experience() {
+function LLC() {
   return (
     <div id="experience" className="z-50 border-t my-4 border-[#25213b] relative">
       <Image src="/section.svg" alt="Hero" width={1572} height={795} className="absolute -z-10" />
@@ -45,4 +45,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default LLC;

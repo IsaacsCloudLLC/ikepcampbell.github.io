@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Isaac Campbell | Providing Cloud Solutions for Over 6 Years',
-  description: 'This is the portfolio of Isaac Campbell! I\'m a DevOps Engineer and Founder of Isaacs Cloud LLC, a service providing Hosting as a Service to Small businesses'
+  description: 'This is the portfolio of Isaac Campbell! I\'m a DevOps Engineer and Founder of Isaacs Cloud LLC, a service providing Hosting as a Service (HaaS) to Small/Midsize Businesses'
 }
 
 export default function RootLayout({ children }) {

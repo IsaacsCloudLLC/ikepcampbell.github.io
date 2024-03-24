@@ -1,6 +1,6 @@
 Tomorrow:
 
 1.) clean up projects
-make contact me better
-talk about isaacscloud llc
-freshen up skills to make it look better. im thinking a beehive or something
+2. make contact me better
+3. talk about isaacscloud llc
+4. freshen up skills to make it look better. im thinking a beehive or something
