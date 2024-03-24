@@ -10,7 +10,7 @@ function Navbar() {
           <Link
             href="/"
             className=" text-[#16f2b3] text-3xl font-bold">
-            Isaac Campbell
+            isaacs.cloud
           </Link>
         </div>
 
@@ -27,13 +27,13 @@ function Navbar() {
             <a className="block px-4 py-2 no-underline outline-none hover:no-underline" href="#skills"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">SKILLS</div></a>
           </li>
           <li>
-            <a className="block px-4 py-2 no-underline outline-none hover:no-underline" href="#education"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div></a>
-          </li>
-          <li>
-            <a className="block px-4 py-2 no-underline outline-none hover:no-underline" href="#blogs"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">BLOGS</div></a>
-          </li>
-          <li>
             <a className="block px-4 py-2 no-underline outline-none hover:no-underline" href="#projects"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div></a>
+          </li>
+          <li>
+            <a className="block px-4 py-2 no-underline outline-none hover:no-underline" href="#company"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">ISAACS CLOUD LLC</div></a>
+          </li>
+          <li>
+            <a className="block px-4 py-2 no-underline outline-none hover:no-underline" href="#contact-me"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">CONTACT ME</div></a>
           </li>
         </ul>
       </div>
