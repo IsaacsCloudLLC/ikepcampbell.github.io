@@ -1,4 +1,4 @@
-import { BlogPosts } from 'app/components/posts'
+
 
 export default function Page() {
   return (
@@ -15,9 +15,6 @@ export default function Page() {
         {`In 2024 I founded Isaacs Cloud LLC, bringing Hosting as a Service (HaaS) to small and mid size businesses.  
         I bring enthusiasm, security, and efficient technical solutions to solve business problems!`}
       </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
     </section>
   )
 }
