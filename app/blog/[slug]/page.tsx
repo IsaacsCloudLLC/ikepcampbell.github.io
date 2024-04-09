@@ -7,7 +7,9 @@ export async function generateStaticParams() {
   let posts = getBlogPosts()
 
   return posts.map((post) => ({
-    slug: post.slug,
+    params: {
+      slug: post.slug,
+    },
   }))
 }
 
