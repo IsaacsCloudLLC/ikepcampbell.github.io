@@ -35,7 +35,7 @@ const projects = [
 // ProjectCard component
 function ProjectCard({ project }) {
     return (
-        <div className="bg-white rounded-lg shadow-md p-4 flex items-center">
+        <div className="dark:bg-white rounded-lg shadow-md p-4 flex items-center">
             {project.image && (
                 <img src={project.image} alt={project.title} className="w-32 h-32 mr-4 rounded-2xl" />
             )}
