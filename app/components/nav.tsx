@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 const navItems = {
   '/': {
@@ -6,13 +6,22 @@ const navItems = {
   },
   '/projects': {
     name: 'projects',
+  },
+  '/services': {
+    name: 'services',
+  },
+  '/about': {
+    name: 'about',
+  },
+  '/contact': {
+    name: 'contact',
   }
-}
+};
 
 export function Navbar() {
   return (
     <aside className="-ml-[8px] mb-16 tracking-tight">
-      <div className="lg:sticky lg:top-20">
+      <div className="z-50 pt-4 pb-4">
         <nav
           className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
@@ -23,15 +32,15 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className="transition-all text-2xl hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
                 >
                   {name}
                 </Link>
-              )
+              );
             })}
           </div>
         </nav>
       </div>
     </aside>
-  )
+  );
 }
