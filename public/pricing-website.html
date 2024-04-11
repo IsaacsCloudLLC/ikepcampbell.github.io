@@ -1,144 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Website Design Pricing</title>
+    <title>Website Design Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f7f7f7;
             color: #333;
         }
 
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            width: 80%;
+            margin: 50px auto;
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2, h3 {
-            text-align: center;
-            color: #333;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .tier {
-            margin-top: 30px;
             padding: 20px;
-            background-color: #f3f3f3;
-            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .tier h3 {
+        h1,
+        h2 {
+            text-align: center;
+            color: #444;
+        }
+
+        .package {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .package .card {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .package .card h3 {
+            text-align: center;
             color: #555;
         }
 
-        .tier ul {
-            margin-left: 20px;
+        .package .card ul {
+            list-style: none;
+            padding: 0;
         }
 
-        .tier li {
-            margin-bottom: 5px;
+        .package .card ul li {
+            margin-bottom: 10px;
         }
 
-        .basic {
-            border-left: 5px solid #1abc9c;
+        .package .card .price {
+            text-align: center;
+            font-size: 24px;
+            color: #007bff;
         }
 
-        .standard {
-            border-left: 5px solid #3498db;
-        }
-
-        .premium {
-            border-left: 5px solid #e74c3c;
-        }
-
-        .contact {
+        .cta {
             text-align: center;
             margin-top: 30px;
         }
 
-        .contact a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
+        .cta a {
             text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
-        .contact a:hover {
-            background-color: #555;
+        .cta a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>Custom Website Design Pricing</h1>
-        <p>Empower your online presence with our tailored website design services.</p>
-        <p>Our pricing tiers cater to businesses of all sizes:</p>
-        <ul>
-            <li>Basic Website Design: <strong>$500 per page</strong></li>
-            <li>Standard Website Design: <strong>$1000 per page</strong></li>
-            <li>Custom Website Design: <strong>Contact us for a personalized quote</strong></li>
-        </ul>
-
-        <h2>Our Tiers:</h2>
-        <div class="tier basic">
-            <h3>Basic Tier:</h3>
-            <ul>
-                <li>1-5 Pages: <strong>$500 per page</strong></li>
-                <li>Responsive Design</li>
-                <li>Standard Contact Form</li>
-                <li>Basic SEO Optimization</li>
-                <li>1 Month of Maintenance</li>
-            </ul>
+        <h1>Professional Website Design Services</h1>
+        <div class="package">
+            <div class="card">
+                <h3>Basic</h3>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Up to 5 Pages</li>
+                    <li>Custom Graphics</li>
+                    <li>Basic SEO</li>
+                </ul>
+                <div class="price">$499</div>
+            </div>
+            <div class="card">
+                <h3>Standard</h3>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Up to 10 Pages</li>
+                    <li>Custom Graphics & Logo</li>
+                    <li>Advanced SEO</li>
+                    <li>1 Year Maintenance</li>
+                </ul>
+                <div class="price">$999</div>
+            </div>
+            <div class="card">
+                <h3>Premium</h3>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Unlimited Pages</li>
+                    <li>Custom Graphics & Logo</li>
+                    <li>Advanced SEO & Analytics</li>
+                    <li>2 Years Maintenance</li>
+                    <li>Dedicated Support</li>
+                </ul>
+                <div class="price">$1999</div>
+            </div>
         </div>
-        <div class="tier standard">
-            <h3>Standard Tier:</h3>
-            <ul>
-                <li>6-10 Pages: <strong>$950 per page</strong></li>
-                <li>Responsive Design</li>
-                <li>Advanced Contact Form</li>
-                <li>Enhanced SEO Optimization</li>
-                <li>3 Months of Maintenance</li>
-                <li>Basic E-commerce Integration (up to 10 products)</li>
-            </ul>
-        </div>
-        <div class="tier premium">
-            <h3>Premium Tier:</h3>
-            <ul>
-                <li>11+ Pages: <strong>$1500 per page</strong></li>
-                <li>Custom Responsive Design</li>
-                <li>Advanced Contact Form with CRM Integration</li>
-                <li>Comprehensive SEO Optimization</li>
-                <li>6 Months of Maintenance</li>
-                <li>Advanced E-commerce Integration (up to 100 products)</li>
-                <li>Custom Content Management System</li>
-                <li>Monthly Analytics Reporting</li>
-                <li>Priority Support</li>
-            </ul>
-        </div>
-
-        <div class="contact">
-            <p>Ready to elevate your online presence?</p>
-            <a href="mailto:info@example.com">Contact Us</a>
+        <div class="cta">
+            <a href="#">Contact Us for a Quote</a>
         </div>
     </div>
 </body>
+
 </html>
