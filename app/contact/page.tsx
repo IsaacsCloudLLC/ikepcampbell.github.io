@@ -28,18 +28,18 @@ function GitHubIcon() {
 
 export default function Page() {
     return (
-        <section className="contact-section bg-gray-200 dark:bg-gray-800 p-4">
+        <section className="bg-gray-200 dark:bg-gray-800 p-4">
             <h1 className="font-semibold text-3xl mb-8 tracking-tighter text-center pt-10">Contact Me</h1>
             <p className="text-xl font-medium text-center mt-8 text-gray-600 dark:text-gray-300 pb-4">
                 I'm always open to projects and connections! Follow me on Github and LinkedIn.
             </p>
-            <div className="flex flex-wrap justify-center md:justify-between p-2">
-                <a href="https://github.com/IkePCampbell" className="contact-card w-full lg:w-1/2 md:w-1/3 mb-4 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-white dark:bg-gray-700"> {/* Card layout */}
+            <div className="flex flex-wrap jutisfy-center md:justify-between p-2">
+                <a href="https://github.com/IkePCampbell" className="relative lg:left-20 w-full lg:w-1/3 md:w-1/3 mb-4 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-white dark:bg-gray-700">
                     <GitHubIcon />
                     <p className="text-xl font-medium mb-2 mt-4">Github</p>
                     <p className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100">ikepcampbell</p>
                 </a>
-                <a href="https://www.linkedin.com/in/isaac-campbell/" className="contact-card w-full lg:w-1/2 md:w-1/3 mb-4 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-white dark:bg-gray-700"> {/* Card layout */}
+                <a href="https://www.linkedin.com/in/isaac-campbell/" className="relative lg:right-20 w-full lg:w-1/3 md:w-1/3 mb-4 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-white dark:bg-gray-700">
                     <LinkedIn />
                     <p className="text-xl font-medium mb-2 mt-4">LinkedIn</p>
                     <p className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100">Isaac Campbell</p>
