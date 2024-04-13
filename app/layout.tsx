@@ -6,6 +6,7 @@ import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://isaacs.cloud"),
@@ -51,7 +52,7 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-6xl mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-7xl mx-4 mt-8 lg:mx-auto">
         <div className="sticky top-0 z-50 mb-10 bg-white dark:bg-black">
           <Navbar />
         </div>
@@ -63,6 +64,7 @@ export default function RootLayout({
           <SpeedInsights />
         </main>
       </body>
+      <GoogleAnalytics gaId="G-21M7CHET8L" />
     </html>
   )
 }

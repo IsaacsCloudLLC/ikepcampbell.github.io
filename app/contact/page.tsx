@@ -29,34 +29,40 @@ function GitHubIconLight() {
 }
 export default function Page() {
     return (
-        <section className="bg-gray-200 dark:bg-gray-800 p-4">
-            <h1 className="font-semibold text-3xl mb-8 tracking-tighter text-center pt-10">Contact Me</h1>
-            <p className="text-xl font-medium text-center mt-8 text-gray-600 dark:text-gray-300 pb-4">
+        <div>
+             <h1 className="text-5xl font-bold text-center text-white mb-8">Contact Me</h1>
+             <section className="rounded-lg bg-gradient-to-r from-gray-200 to-gray-100 p-4">
+            <p className="text-xl font-medium text-center mt-8 text-gray-800 dark:text-gray-600 pb-4">
                 I'm always open to projects and connections! Follow me on Github and LinkedIn.
             </p>
+            <p className="text-xl font-medium text-center mt-2 text-gray-800 dark:text-gray-600 pb-4">
+                Here are ways you can connect with me.
+            </p>
             <div className="flex flex-wrap jutisfy-center md:justify-between p-2">
-                <a href="https://github.com/IkePCampbell" className="relative lg:left-20 w-full lg:w-1/3 md:w-1/3 mb-4 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-white dark:bg-gray-700">
+                <a href="https://github.com/IkePCampbell" className="relative lg:left-20 w-full lg:w-1/3 md:w-1/3 mb-4 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-gradient-to-r from-teal-400 to-teal-700">
                     <GitHubIconLight />
+
                     <p className="text-xl font-medium mb-2 mt-4">Github</p>
-                    <p className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100">ikepcampbell</p>
+                    <p className="">ikepcampbell</p>
                 </a>
-                <a href="https://www.linkedin.com/in/isaac-campbell/" className="relative lg:right-20 w-full lg:w-1/3 md:w-1/3 mb-4 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-white dark:bg-gray-700">
+                <a href="https://www.linkedin.com/in/isaac-campbell/" className="relative lg:right-20 w-full lg:w-1/3 md:w-1/3 mb-4 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-white dark:bg-gray-700 bg-gradient-to-r from-teal-400 to-teal-700">
                     <LinkedIn />
                     <p className="text-xl font-medium mb-2 mt-4">LinkedIn</p>
-                    <p className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100">Isaac Campbell</p>
+                    <p className="">Isaac Campbell</p>
                 </a>
             </div>
-            <div className="text-xl font-medium text-center mt-8 text-gray-600 dark:text-gray-300">
-                <p>
-                    Have a project in mind? Let's figure out how I can help!
-                </p>
+            <div className="text-xl font-medium text-center mt-8 text-gray-600 dark:text-gray-600">
+
                 <a href="https://calendly.com/isaacscloudllc" className="underline text-blue-500 hover:text-blue-700">
-                    Schedule a free consultation
+                    Schedule a free consultation.
                 </a>
                 <p className="mb-4 mt-4">
-                    or drop me a line at support@isaacs.cloud to discuss your needs.
+                    Or drop me a line at support@isaacs.cloud to start a conversation on how we can build your dream website together.
                 </p>
             </div>
         </section>
+
+        </div>
+       
     );
 }

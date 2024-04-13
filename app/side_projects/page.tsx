@@ -35,18 +35,18 @@ const projects = [
 // ProjectCard component
 function ProjectCard({ project }) {
     return (
-        <div className="dark:bg-white rounded-lg shadow-md p-4 flex items-center">
+        <div className="dark:bg-gradient-to-r dark:from-gray-200 dark:to-gray-100 rounded-lg shadow-md p-4 flex items-center">
             {project.image && (
                 <img src={project.image} alt={project.title} className="w-32 h-32 mr-4 rounded-2xl" />
             )}
-            <div>
-                <p className="font-semibold text-gray-600 mb-4 text-lg">{project.title}</p>
-                <p className="text-gray-600">{project.description}</p>
+            <div className="">
+                <p className="font-semibold text-gray-800 mb-4 text-2xl">{project.title}</p>
+                <p className="text-gray-600 text-xl ">{project.description}</p>
                 {project.privacy_policy && (
-                    <a href={`/${project.privacy_policy}`} className="text-blue-500 hover:underline mt-2 inline-block mr-4">View Privacy Policy</a>
+                    <a href={`/${project.privacy_policy}`} className="text-blue-500 hover:underline mt-2 inline-block text-xl mr-4">View Privacy Policy</a>
                 )}
 
-                <a href={project.link} className="text-blue-500 hover:underline mt-2 inline-block">
+                <a href={project.link} className="text-blue-500 hover:underline mt-2 inline-block text-xl">
                     View {project.view}
                 </a>
             </div>
@@ -56,13 +56,19 @@ function ProjectCard({ project }) {
 
 export default function Page() {
     return (
-        <section className="mb-8">
-            <h1 className="font-semibold text-3xl mb-8 tracking-tighter">Projects</h1>
-            <div className="grid grid-cols-1 gap-6">
-                {projects.map((project, index) => (
-                    <ProjectCard key={index} project={project} />
-                ))}
-            </div>
-        </section>
+        <div>
+             <h1 className="text-5xl font-bold text-center text-white mb-8">Side Projects</h1>
+             <section className="rounded-lg relative bg-gradient-to-r from-teal-400 to-teal-700 overflow-hidden py-24 px-4"> 
+                <p className="text-xl text-white text-center mb-8">
+                    Beyond client work, here's a peek into some personal projects I've undertaken to experiment, learn new skills, and build a diverse portfolio. Feel free to explore these projects to get a better sense of my capabilities and creative drive.
+                </p>
+                <div className="grid grid-cols-1 gap-6">
+                    {projects.map((project, index) => (
+                        <ProjectCard key={index} project={project} />
+                    ))}
+                </div>
+            </section>
+        </div>
+       
     );
 }

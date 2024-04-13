@@ -4,9 +4,6 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/projects': {
-    name: 'projects',
-  },
   '/services': {
     name: 'services',
   },
@@ -15,7 +12,10 @@ const navItems = {
   },
   '/contact': {
     name: 'contact',
-  }
+  },
+  '/side_projects': {
+    name: 'side projects',
+  },
 };
 
 export function Navbar() {
