@@ -3,21 +3,23 @@ import React from 'react';
 import Link from 'next/link';
 
 const navItems = [
-  { path: '/', name: 'home' },
-  { path: '/services', name: 'services' },
-  { path: '/about', name: 'about' },
-  { path: '/contact', name: 'contact' },
-  { path: '/side_projects', name: 'side projects' },
+  { path: '/', name: 'Home' },
+  { path: '/services', name: 'Services' },
+  { path: '/about', name: 'About' },
+  { path: '/contact', name: 'Contact' },
+  { path: '/side_projects', name: 'Side Projects' },
 ];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
+
   const toggleMenu = () => setIsOpen(!isOpen);
+
 
   return (
     <aside className="-ml-2  mb-16 tracking-tight">
-      <div className="z-50 pt-4">
+      <div className="z-50">
         <svg
           className="md:hidden lg:hidden absolute left-4 top-2 h-12 w-12 text-white-700 cursor-pointer"
           viewBox="0 0 30 30"
@@ -65,7 +67,7 @@ export function Navbar() {
               <a
                 key={path}
                 href={path}
-                className="text-xl hover:text-neutral-800 dark:hover:text-neutral-200 py-1 px-4 mt-1 right-0 mb-1" // add text-right class
+                className="text-xl text-white dark:text-white hover:text-neutral-200 hover:font-semibold py-1 px-4 mt-1 right-0 mb-1" 
                 onClick={toggleMenu}
               >
                 {name}
@@ -77,7 +79,7 @@ export function Navbar() {
               <a
                 key={path}
                 href={path}
-                className="transition-all text-xl hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                className="transition-all text-xl text-white dark:text-white hover:font-semibold dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
               >
                 {name}
               </a>

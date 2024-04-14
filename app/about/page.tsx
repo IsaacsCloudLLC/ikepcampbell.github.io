@@ -8,7 +8,7 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-        <h1 className="text-3xl md:text-5xl font-bold text-center text-white mb-8">Our Team</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">Our Team</h1>
       <section className="rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden py-12 md:py-24 px-4 mb-12 md:mb-20">
         <div className="container mx-auto px-4">
           <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
@@ -39,7 +39,7 @@ export default function Page() {
     </div>
   </div>
 </section>
-<h1 className="text-3xl md:text-5xl font-bold text-center text-white mb-8">Why Partner with Us?</h1>
+<h1 className="text-3xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">Why Partner with Us?</h1>
       <section className="rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden py-12 md:py-24 px-4 mb-12 md:mb-20">
         <div className="container mx-auto py-12 px-4">
           <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8">

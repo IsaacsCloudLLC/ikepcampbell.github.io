@@ -37,8 +37,7 @@ const pricingData = [
       "E-commerce Functionality",
       "Advanced SEO Strategy",
       "Monthly Maintenance & Support",
-      "3 Hour Consultation",
-      "5 Rounds of Revisions",
+      "1 Hour Consultation",
       "Growth Package Features Included",
     ],
   },
@@ -140,13 +139,13 @@ function PricingCard({ name, startingPrice, features }) {
 
   return (
     <div>
-      <h1 className="text-3xl md:text-5xl font-bold text-center text-white mb-8">Let's make the Perfect Solution for Your Business</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">Let's make the Perfect Solution for Your Business</h1>
       <section className="rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden py-12 md:py-24 px-4">
-        <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center mb-8">
+        <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center mb-8 bg-black rounded-full pt-1 pb-1">
           {services.map((service) => (
             <button
               key={service}
-              className={`flex-1 md:w-1/3 py-2 md:py-3 px-4 md:px-6 text-lg md:text-2xl rounded-full mb-4 md:mb-0 mx-2 md:mx-4 text-white ${selectedService === service ? 'bg-teal-500 hover:bg-teal-600' : 'bg-teal-300 hover:bg-teal-400'}`}
+              className={`flex-1 md:w-1/3 py-2 md:py-3 px-4 md:px-2 text-lg md:text-2xl rounded-full mb-4 md:mb-0 mx-2 md:mx-2 text-white ${selectedService === service ? 'bg-teal-500 hover:bg-teal-600' : 'bg-teal-300 hover:bg-teal-400'}`}
               onClick={() => toggleService(service)}
             >
               {service}

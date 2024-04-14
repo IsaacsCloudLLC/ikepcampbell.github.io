@@ -52,8 +52,8 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased mt-8 lg:mx-auto">
-        <div className="sticky top-0 z-50 mb-10 bg-white dark:bg-black">
+      <body className="antialiased lg:mx-auto">
+        <div className="sticky top-0 z-50 dark:bg-black">
           <Navbar />
         </div>
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">

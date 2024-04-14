@@ -32,7 +32,7 @@ const projects = [
 
 function ProjectCard({ project }) {
     return (
-        <div className="dark:bg-gradient-to-r dark:from-gray-200 dark:to-gray-100 rounded-lg shadow-md p-4 flex flex-col md:flex-row items-center">
+        <div className="bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg shadow-md p-4 flex flex-col md:flex-row items-center">
             {project.image && (
                 <img src={project.image} alt={project.title} className="w-full md:w-1/4 h-auto md:h-32 mr-0 md:mr-4 rounded-2xl mb-4 md:mb-0" />
             )}
@@ -53,7 +53,7 @@ function ProjectCard({ project }) {
 export default function Page() {
     return (
         <div>
-            <h1 className="text-3xl md:text-5xl font-bold text-center text-white mb-8">Side Projects</h1>
+            <h1 className="text-3xl md:text-5xl font-bold text-center dark:text-white mb-8">Side Projects</h1>
             <section className="rounded-lg relative bg-gradient-to-r from-teal-400 to-teal-700 overflow-hidden py-12 px-4 md:py-24 md:px-8"> 
                 <p className="text-xl md:text-2xl text-white text-center mb-8">
                     Beyond client work, here's a peek into some personal projects I've undertaken to experiment, learn new skills, and build a diverse portfolio. Feel free to explore these projects to get a better sense of my capabilities and creative drive.
