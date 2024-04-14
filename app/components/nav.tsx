@@ -19,7 +19,7 @@ export function Navbar() {
     <aside className="-ml-2  mb-16 tracking-tight">
       <div className="z-50 pt-4">
         <svg
-          className="absolute left-4 top-2 h-12 w-12 text-white-700 cursor-pointer"
+          className="md:hidden lg:hidden absolute left-4 top-2 h-12 w-12 text-white-700 cursor-pointer"
           viewBox="0 0 30 30"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

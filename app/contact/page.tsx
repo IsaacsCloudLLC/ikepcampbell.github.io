@@ -39,12 +39,12 @@ export default function Page() {
                     Here are ways you can connect with me.
                 </p>
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center p-2">
-                    <a href="https://github.com/IkePCampbell" className="w-full md:w-auto mb-4 md:mb-0 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-gradient-to-r from-teal-400 to-teal-700">
+                    <a href="https://github.com/IkePCampbell" className="w-full lg:w-1/3 md:w-auto mb-4 md:mb-0 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-gradient-to-r from-teal-400 to-teal-700">
                         <GitHubIconLight />
                         <p className="text-xl font-medium mb-2 mt-4 text-center md:text-left">Github</p>
                         <p className="text-center md:text-left">ikepcampbell</p>
                     </a>
-                    <a href="https://www.linkedin.com/in/isaac-campbell/" className="w-full md:w-auto mb-4 md:mb-0 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-gradient-to-r from-teal-400 to-teal-700">
+                    <a href="https://www.linkedin.com/in/isaac-campbell/" className="w-full lg:w-1/3 md:w-auto mb-4 md:mb-0 px-4 py-6 rounded-lg shadow-md hover:shadow-lg-hover bg-gradient-to-r from-teal-400 to-teal-700">
                         <LinkedIn />
                         <p className="text-xl font-medium mb-2 mt-4 text-center md:text-left">LinkedIn</p>
                         <p className="text-center md:text-left">Isaac Campbell</p>
