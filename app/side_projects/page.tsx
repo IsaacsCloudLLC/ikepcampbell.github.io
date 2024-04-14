@@ -30,23 +30,19 @@ const projects = [
     },
 ];
 
-
-
-// ProjectCard component
 function ProjectCard({ project }) {
     return (
-        <div className="dark:bg-gradient-to-r dark:from-gray-200 dark:to-gray-100 rounded-lg shadow-md p-4 flex items-center">
+        <div className="dark:bg-gradient-to-r dark:from-gray-200 dark:to-gray-100 rounded-lg shadow-md p-4 flex flex-col md:flex-row items-center">
             {project.image && (
-                <img src={project.image} alt={project.title} className="w-32 h-32 mr-4 rounded-2xl" />
+                <img src={project.image} alt={project.title} className="w-full md:w-1/4 h-auto md:h-32 mr-0 md:mr-4 rounded-2xl mb-4 md:mb-0" />
             )}
-            <div className="">
-                <p className="font-semibold text-gray-800 mb-4 text-2xl">{project.title}</p>
-                <p className="text-gray-600 text-xl ">{project.description}</p>
+            <div className="flex flex-col justify-center">
+                <p className="font-semibold text-gray-800 mb-2 text-2xl">{project.title}</p>
+                <p className="text-gray-600 text-lg mb-2">{project.description}</p>
                 {project.privacy_policy && (
-                    <a href={`/${project.privacy_policy}`} className="text-blue-500 hover:underline mt-2 inline-block text-xl mr-4">View Privacy Policy</a>
+                    <a href={`/${project.privacy_policy}`} className="text-blue-500 hover:underline mt-2 text-lg mr-4">View Privacy Policy</a>
                 )}
-
-                <a href={project.link} className="text-blue-500 hover:underline mt-2 inline-block text-xl">
+                <a href={project.link} className="text-blue-500 hover:underline mt-2 text-lg">
                     View {project.view}
                 </a>
             </div>
@@ -57,18 +53,17 @@ function ProjectCard({ project }) {
 export default function Page() {
     return (
         <div>
-             <h1 className="text-5xl font-bold text-center text-white mb-8">Side Projects</h1>
-             <section className="rounded-lg relative bg-gradient-to-r from-teal-400 to-teal-700 overflow-hidden py-24 px-4"> 
-                <p className="text-xl text-white text-center mb-8">
+            <h1 className="text-3xl md:text-5xl font-bold text-center text-white mb-8">Side Projects</h1>
+            <section className="rounded-lg relative bg-gradient-to-r from-teal-400 to-teal-700 overflow-hidden py-12 px-4 md:py-24 md:px-8"> 
+                <p className="text-xl md:text-2xl text-white text-center mb-8">
                     Beyond client work, here's a peek into some personal projects I've undertaken to experiment, learn new skills, and build a diverse portfolio. Feel free to explore these projects to get a better sense of my capabilities and creative drive.
                 </p>
-                <div className="grid grid-cols-1 gap-6">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                     {projects.map((project, index) => (
                         <ProjectCard key={index} project={project} />
                     ))}
                 </div>
             </section>
         </div>
-       
     );
 }

@@ -8,17 +8,17 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-      <h1 className="text-5xl font-bold text-center text-white mb-8">Our Team</h1>
-      <section className="rounded-lg relative top-10 bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden py-12 px-4 mb-20">
-        <div className="container mx-auto  px-4">
-        <p className="text-gray-700 text-xl  mb-8">
-        Isaacs Cloud LLC is fueled by passionate individuals dedicated to providing exceptional Hosting as a Service (HaaS) solutions for small and mid-sized businesses. Our team boasts extensive experience across FinTech, Education, Consulting, and Insurance, bringing a wealth of knowledge and diverse perspectives to the table.
-        </p>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div className="team-member rounded-lg shadow-md overflow-hidden">
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-white mb-8">Our Team</h1>
+      <section className="rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden py-12 md:py-24 px-4 mb-12 md:mb-20">
+        <div className="container mx-auto px-4">
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
+            Isaacs Cloud LLC is fueled by passionate individuals dedicated to providing exceptional Hosting as a Service (HaaS) solutions for small and mid-sized businesses. Our team boasts extensive experience across FinTech, Education, Consulting, and Insurance, bringing a wealth of knowledge and diverse perspectives to the table.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className=" rounded-lg shadow-md overflow-hidden">
         <img
           src="/profile.jpeg"
-          alt="Team Member 1"
+          alt="Isaac Campbell"
           className="w-full h-96 object-cover"
         />
         <div className="p-4 bg-white">
@@ -39,15 +39,14 @@ export default function Page() {
     </div>
   </div>
 </section>
-<h1 className="text-5xl font-bold text-center text-white mb-8">Why Partner with Us?</h1>
-
-<section className="rounded-lg relative top-10 bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden px-4 mb-20">
-<div className="container mx-auto py-12 px-4">
-    <p className="text-gray-700 text-base leading-relaxed mb-8">
-      You deserve a partner who understands your business and cares about your success. At Isaacs Cloud, we're not just about technology – we're about building genuine relationships and helping you achieve your goals. 
-    </p>
-    <ul className="list-disc space-y-4">
-      <li className="text-gray-800">
+<h1 className="text-3xl md:text-5xl font-bold text-center text-white mb-8">Why Partner with Us?</h1>
+      <section className="rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden py-12 md:py-24 px-4 mb-12 md:mb-20">
+        <div className="container mx-auto py-12 px-4">
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
+            You deserve a partner who understands your business and cares about your success. At Isaacs Cloud, we're not just about technology – we're about building genuine relationships and helping you achieve your goals. 
+          </p>
+          <ul className="list-disc space-y-4">
+            <li className="text-gray-800">
         <span className="text-teal-500 font-bold">Your Trusted Cloud Advisor:</span> We take the time to understand your unique needs and challenges. We'll work collaboratively with you to develop a customized website that scales with your business. 
       </li>
       <li className="text-gray-800">
@@ -58,13 +57,8 @@ export default function Page() {
       </li>
     </ul>
   </div>
-  <a href="/contact" className="relative lg:left-1/3 text-center items-center justify-center bg-teal-500 hover:bg-teal-600 text-white text-lg py-2 px-6 rounded-full font-bold inline-block mb-12">Schedule a Free Consultation to Get Started</a>
-
-  
+  <a href="/contact" className="block mx-auto max-w-xs md:max-w-none text-center bg-teal-500 hover:bg-teal-600 text-white text-lg md:text-xl py-3 px-6 rounded-full font-bold">Schedule a Free Consultation to Get Started</a>
       </section>
-
-
- 
     </div>
   );
 }

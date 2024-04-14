@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 
-const services = ['Website Design', 'Web Analytics', 'Hosting'];
+const services = ['Website Design', 'Web Analytics'];
 
 const pricingData = [
   {
@@ -84,7 +84,7 @@ const analyticsPricingData = [
 function PricingCard({ name, startingPrice, features }) {
   return (
 
-    <div className="bg-gradient-to-r from-teal-500 to-teal-700 rounded-lg shadow-lg p-8 mt-12 mr-8 w-80">
+    <div className="bg-gradient-to-r from-teal-500 to-teal-700 rounded-lg shadow-lg p-8 mb-8 w-full md:w-80">
       <h2 className="text-3xl text-center font-bold text-white mb-4">{name}</h2>
       <p className="text-xl text-center text-white">Starting from</p>
       <div className="text-5xl text-center font-bold text-white mb-4">${startingPrice}</div>
@@ -140,29 +140,21 @@ function PricingCard({ name, startingPrice, features }) {
 
   return (
     <div>
-      <h1 className="text-5xl font-bold text-center text-white mb-8">Lets make the Perfect Solution for Your Business</h1>
-      <section className="rounded-lg relative top-10 bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden py-24 px-4">
-        <div className={`flex items-center p-1 rounded-full h-1/3 lg:w-1/2 lg:left-1/4 lg:relative flex-row justify-between  ${selectedService ? 'bg-gray-800' : ''}`}>
-          <button
-            className={`flex w-full justify-center px-6 py-2 text-2xl rounded-full mr-4 text-white  ${
-              selectedService === 'Website Design' ? 'bg-teal-500 hover:bg-teal-600' : 'bg-teal-300 hover:bg-teal-400'
-            }`}
-            onClick={() => toggleService('Website Design')}
-          >
-            Website Design
-          </button>
-          <button
-            className={`flex w-full justify-center px-6 py-2 text-2xl rounded-full text-white ${
-              selectedService === 'Web Analytics' ? 'bg-teal-500 hover:bg-teal-600' : 'bg-teal-300 hover:bg-teal-400'
-            }`}
-            onClick={() => toggleService('Web Analytics')}
-          >
-            Web Analytics
-          </button>
+      <h1 className="text-3xl md:text-5xl font-bold text-center text-white mb-8">Let's make the Perfect Solution for Your Business</h1>
+      <section className="rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden py-12 md:py-24 px-4">
+        <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center mb-8">
+          {services.map((service) => (
+            <button
+              key={service}
+              className={`flex-1 md:w-1/3 py-2 md:py-3 px-4 md:px-6 text-lg md:text-2xl rounded-full mb-4 md:mb-0 mx-2 md:mx-4 text-white ${selectedService === service ? 'bg-teal-500 hover:bg-teal-600' : 'bg-teal-300 hover:bg-teal-400'}`}
+              onClick={() => toggleService(service)}
+            >
+              {service}
+            </button>
+          ))}
         </div>
         {selectedService && serviceContent[selectedService]}
-        <a href="/contact" className="relative lg:left-1/3 text-center items-center justify-center bg-teal-500 hover:bg-teal-600 text-white text-lg py-2 px-6 rounded-full font-bold inline-block">Schedule a Free Consultation to Get Started</a>
-
+        <a href="/contact" className="block mx-auto max-w-xs md:max-w-none text-center bg-teal-500 hover:bg-teal-600 text-white text-lg md:text-xl py-3 px-6 rounded-full font-bold">Schedule a Free Consultation to Get Started</a>
       </section>
     </div>
   );
