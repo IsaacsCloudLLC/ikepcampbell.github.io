@@ -10,6 +10,10 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://isaacs.cloud"),
+  icons: {
+    icon: "/logo.jpg"
+    
+  },
   title: {
     default: 'Isaacs Cloud | Providing DevOps Solutions since 2019',
     template: '%s | Isaacs Cloud',
