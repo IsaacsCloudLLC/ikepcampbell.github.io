@@ -51,11 +51,8 @@ export default function Page() {
                     </a>
                 </div>
                 <div className="text-xl font-medium text-center mt-8 text-gray-600 dark:text-gray-600">
-                    <a href="https://calendly.com/isaacscloudllc" className="underline text-blue-500 hover:text-blue-700">
-                        Schedule a free consultation.
-                    </a>
                     <p className="mb-4 mt-4">
-                        Or drop me a line at support@isaacs.cloud to start a conversation on how we can build your dream website together.
+                        Drop me an email support@isaacs.cloud to start a conversation with me on how we can build your dream website together.
                     </p>
                 </div>
             </section>
