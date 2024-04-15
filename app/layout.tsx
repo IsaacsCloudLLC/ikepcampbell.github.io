@@ -8,24 +8,31 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
+const socialShareImageUrl = new URL("/logo.jpg", "https://isaacs.cloud").toString()
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://isaacs.cloud"),
   icons: {
     icon: "/logo.jpg"
-    
+
   },
   title: {
-    default: 'Isaacs Cloud | Providing DevOps Solutions since 2019',
+    default: 'Isaacs Cloud | Website Solutions for Quad Cities Businesses',
     template: '%s | Isaacs Cloud',
   },
-  description: 'Providing DevOps Solutions since 2019',
+  description: 'Isaacs Cloud | Proven Website Design and Cloud Solutions to automate, streamline, and secure your IT infrastructure. Located in the Quad Cities, Iowa.', // Include targeted keywords and location
   openGraph: {
-    title: 'Isaacs Cloud',
-    description: 'Providing DevOps Solutions since 2019',
+    title: 'Isaacs Cloud | DevOps in the Quad Cities',
+    description: 'Isaacs Cloud | Proven Website Design and Cloud Solutions to automate, streamline, and secure your IT infrastructure. Located in the Quad Cities, Iowa.', // Include targeted keywords and location
     url: "https://isaacs.cloud",
     siteName: 'Isaacs Cloud',
     locale: 'en_US',
-    type: 'website',
+    type: "website",
+    images: {
+      url: socialShareImageUrl,
+      width: 1200,
+      height: 630,
+    },
   },
   robots: {
     index: true,
