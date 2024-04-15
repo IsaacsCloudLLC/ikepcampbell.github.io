@@ -63,6 +63,13 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <head>
+        <title>Isaacs Cloud | Website Design For the Quad Cities</title>
+        <meta name="description" content="Isaacs Cloud offers Website Design and Cloud Solutions to automate, streamline, and secure your IT infrastructure. Located in the Quad Cities, Iowa." />
+        <link rel="icon" type="image/x-icon" href="/logo.jpg" />
+        <meta property="og:image" content="/logo.jpg" />
+
+      </head>
       <body className="antialiased lg:mx-auto">
         <div className="sticky top-0 z-50 dark:bg-black">
           <Navbar />
