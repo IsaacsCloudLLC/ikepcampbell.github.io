@@ -69,11 +69,11 @@ export default function RootLayout({
         <meta property="og:image" content="/logo.jpg" />
 
       </head>
-      <body className="antialiased lg:mx-auto">
-        <div className="sticky top-0 z-50 dark:bg-black">
+      <body className="antialiased lg:mx-auto bg-[url('/bg.jpg')]">
+        <div className="sticky top-0 z-50">
           <Navbar />
         </div>
-        <main className="flex-auto min-h-screen min-w-0 flex flex-col px-2 md:px-0 bg-[url('/bg.jpg')]">
+        <main className="flex-auto min-h-screen min-w-0 flex flex-col px-2 md:px-0">
           {children}
           <Footer />
           <Analytics />

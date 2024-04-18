@@ -4,11 +4,11 @@ const RoadmapItem = ({ title, description }) => {
   return (
     <li className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
       <div className="md:w-1/5">
-        <span className="w-2 h-12 md:h-16 lg:relative lg:left-24 bg-teal-500 rounded-full flex items-center justify-center text-white"></span>
+        <span className="w-2 h-12 md:h-16 lg:relative lg:left-24 bg-yellow-200 rounded-full flex items-center justify-center text-white"></span>
       </div>
       <div className="lg:w-full md:w-4/5 text-center md:text-left">
-        <h3 className="text-gray-800 text-xl md:text-2xl mb-1 md:mt-0">{title}</h3>
-        <p className="text-gray-600 text-lg md:text-xl">{description}</p>
+        <h3 className="text-gray-900 lg:text-3xl font-semibold md:text-2xl mb-2 md:mt-0">{title}</h3>
+        <p className="text-gray-800 lg:text-2xl md:text-xl mt-2">{description}</p>
       </div>
     </li>
   );
@@ -21,32 +21,30 @@ export default function Page() {
         <h1 className="text-2xl md:text-4xl text-center font-bold">Ready to stand out online?</h1>
         <h2 className="text-4xl md:text-6xl font-bold tracking-widest leading-tight mb-2 text-center">
           Let's Build a Website That{' '}
-          <span className="bg-gradient-to-r from-teal-400 to-blue-500 inline-block text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-yellow-100 to-white inline-block text-transparent bg-clip-text">
             Sparks
           </span>{' '}
+
           Engagement
+
         </h2>
         <p className="text-lg md:text-xl text-center">
           Your Brand. Your Vision. My Expertise. Let's build your future together.
         </p>
-        <Link href="/contact">
-          <button className="mt-8 px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl bg-teal-500 text-white font-bold rounded-full hover:bg-teal-600 transition-all duration-300">
-            Get Started
-          </button>
-        </Link>
+
       </header>
-      <section className="rounded-lg relative top-10 mb-20 bg-gradient-to-r from-teal-400 to-teal-700 overflow-hidden text-white">
-        <div className="hero bg-gradient-to-r from-teal-400 to-teal-700 text-white py-16 md:py-24 px-4 flex flex-col items-center justify-center">
+      <section className="rounded-lg relative top-10 mb-20  overflow-hidden text-white">
+        <div className="hero bg-slate-300 bg-opacity-40 text-white py-16 md:py-24 px-4 flex flex-col items-center justify-center">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 md:mb-8">
             Boost Your Business with a Winning Website
           </h2>
-          <p className="text-lg md:text-xl text-center mb-4 md:mb-8">
+          <p className="lg:text-2xl md:text-xl text-center mb-4 md:mb-8">
             Tired of a website that doesn't convert? Let's build a beautiful and effective website that attracts leads
             and grows your business.
           </p>
           <div className="flex justify-center">
             <Link href="/services">
-              <button className="px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl bg-white text-teal-500 font-bold rounded-full hover:bg-teal-100 hover:text-teal-400 shadow-md transition-all duration-300">
+              <button className="px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl bg-gray-800 text-yellow-100 font-bold rounded-full hover:bg-yellow-100 hover:text-gray-800 shadow-md transition-all duration-300">
                 See if the services we offer are a right fit for you!
               </button>
             </Link>
@@ -56,11 +54,11 @@ export default function Page() {
       <h2 className="text-4xl md:text-6xl font-bold text-center mb-8">How we'll make a site</h2>
       <h2 className="text-4xl md:text-6xl font-bold text-center mb-12">
         that turns{' '}
-        <span className="bg-gradient-to-r from-teal-400 to-blue-500 inline-block text-transparent bg-clip-text">traffic</span>{' '}
+        <span className="bg-gradient-to-r from-yellow-200 to-white  inline-block text-transparent bg-clip-text">traffic</span>{' '}
         into{' '}
-        <span className="bg-gradient-to-r from-teal-400 to-blue-500 inline-block text-transparent bg-clip-text">sales</span>
+        <span className="bg-gradient-to-r from-yellow-200 to-white inline-block text-transparent bg-clip-text">sales</span>
       </h2>
-      <section className="flex flex-col md:flex-row md:justify-between items-center py-12 md:py-20 px-4 bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg">
+      <section className="flex flex-col md:flex-row md:justify-between items-center py-12 md:py-20 px-4 bg-slate-100 bg-opacity-80 rounded-lg">
         <div className="w-full md:w-1/2 mb-8 md:mb-0 md:order-2">
           <img
             src="roadmap.png"
