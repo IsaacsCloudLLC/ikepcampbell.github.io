@@ -1,11 +1,12 @@
 import Link from 'next/link';
 
-
-const RoadmapItem = ({ icon, title, description }) => {
+const RoadmapItem = ({ title, description }) => {
   return (
     <li className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
-      <div className="md:w-1/5">{icon}</div>
-      <div className="md:w-4/5 text-center md:text-left">
+      <div className="md:w-1/5">
+        <span className="w-2 h-12 md:h-16 lg:relative lg:left-24 bg-teal-500 rounded-full flex items-center justify-center text-white"></span>
+      </div>
+      <div className="lg:w-full md:w-4/5 text-center md:text-left">
         <h3 className="text-gray-800 text-xl md:text-2xl mb-1 md:mt-0">{title}</h3>
         <p className="text-gray-600 text-lg md:text-xl">{description}</p>
       </div>
@@ -16,7 +17,7 @@ const RoadmapItem = ({ icon, title, description }) => {
 export default function Page() {
   return (
     <div className="mb-24">
-      <header className="relative left-0 w-full flex flex-col items-center justify-center py-4">
+      <header className="mt-12 relative left-0 w-full flex flex-col items-center justify-center py-4 text-white">
         <h1 className="text-2xl md:text-4xl text-center font-bold">Ready to stand out online?</h1>
         <h2 className="text-4xl md:text-6xl font-bold tracking-widest leading-tight mb-2 text-center">
           Let's Build a Website That{' '}
@@ -28,6 +29,11 @@ export default function Page() {
         <p className="text-lg md:text-xl text-center">
           Your Brand. Your Vision. My Expertise. Let's build your future together.
         </p>
+        <Link href="/contact">
+          <button className="mt-8 px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl bg-teal-500 text-white font-bold rounded-full hover:bg-teal-600 transition-all duration-300">
+            Get Started
+          </button>
+        </Link>
       </header>
       <section className="rounded-lg relative top-10 mb-20 bg-gradient-to-r from-teal-400 to-teal-700 overflow-hidden text-white">
         <div className="hero bg-gradient-to-r from-teal-400 to-teal-700 text-white py-16 md:py-24 px-4 flex flex-col items-center justify-center">
@@ -65,27 +71,22 @@ export default function Page() {
         <div className="w-full md:w-1/2 md:order-1 px-4 space-y-8">
           <ul className="flex flex-col space-y-6 items-center md:items-start">
             <RoadmapItem
-              icon={<span className="w-2 h-12 md:h-16 bg-teal-500 rounded-full flex items-center justify-center text-white"></span>}
               title="Consultation"
               description="Let's chat about your vision, goals, and target audience. We'll work together to understand your unique needs and craft a website strategy that sets you up for success."
             />
             <RoadmapItem
-              icon={<span className="w-2 h-12 md:h-16 bg-teal-500 rounded-full flex items-center justify-center text-white"></span>}
               title="Conversion-Focused Design"
               description="We're not going to make a website that not only looks beautiful, but also strategically crafted to convert visitors into paying customers. We'll focus on user experience and clear calls to action to maximize your website's potential."
             />
             <RoadmapItem
-              icon={<span className="w-2 h-12 md:h-16 bg-teal-500 rounded-full flex items-center justify-center text-white"></span>}
               title="Seamless Launch"
               description="Once your website, powered by WordPress or a custom solution, is polished to perfection, we'll launch it to your customers."
             />
             <RoadmapItem
-              icon={<span className="w-2 h-12 md:h-16 bg-teal-500 rounded-full flex items-center justify-center text-white"></span>}
               title="Secure & Reliable Hosting"
               description="Offering secure and reliable website hosting so there are no worries about downtime or technical headaches. Your website will be up and running 24/7, showcasing your business to the world."
             />
             <RoadmapItem
-              icon={<span className="w-2 h-12 md:h-16 bg-teal-500 rounded-full flex items-center justify-center text-white"></span>}
               title="Continuous Growth Strategy"
               description="Your website is a living entity, not a static brochure. We will work with together to develop a data-driven growth strategy that continuously improves your website's performance and keeps you ahead of the curve."
             />

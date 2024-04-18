@@ -83,7 +83,7 @@ const analyticsPricingData = [
 
 function PricingCard({ name, startingPrice, features }) {
   return (
-    <div className="bg-gradient-to-r from-teal-500 to-teal-700 rounded-lg shadow-lg p-8 mb-8 w-full md:w-80">
+    <div className="bg-gradient-to-r from-teal-500 to-teal-700 rounded-lg shadow-lg p-8 w-full mb-12 mr-24 md:w-80">
       <h2 className="text-3xl text-center font-bold text-white mb-4">{name}</h2>
       <p className="text-xl text-center text-white">Starting from</p>
       <div className="text-5xl text-center font-bold text-white mb-4">${startingPrice}</div>
@@ -98,7 +98,6 @@ function PricingCard({ name, startingPrice, features }) {
         ))}
       </ul>
     </div>
-
   );
 }
 
@@ -113,7 +112,7 @@ export default function ServicesPage() {
   const serviceContent = {
     'Website Design': (
       <section className="container mx-auto py-20 px-4">
-        <p className="text-gray-800 text-xl leading-relaxed mb-8">
+        <p className="text-white text-2xl leading-relaxed mb-8">
           Struggling to establish a strong online presence? Let's transform your vision into a reality! I specialize in crafting beautiful, user-friendly websites that convert visitors into leads and customers. Whether you need a simple landing page or a complex e-commerce store, I have the skills and experience to bring your project to life. See the different plans below to find the perfect fit for your needs.
         </p>
         <div className="flex justify-center flex-wrap">
@@ -144,8 +143,8 @@ export default function ServicesPage() {
         <meta name="description" content="Grow your business with beautiful, user-friendly websites and data-driven web analytics. I offer website design, web development, and analytics solutions in the Quad Cities (Davenport, Bettendorf, etc.) - Free Consultation!" />
         <meta name="keywords" content="Quad Cities website design, Quad Cities web developer, web design Davenport, web design Bettendorf, web design Iowa, web analytics Quad Cities, analytics Davenport, analytics Bettendorf, Isaac Campbell web design" />
       </Head>
-      <h1 className="text-3xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">Let's make the Perfect Solution for Your Business</h1>
-      <section className="rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden py-12 md:py-24 px-4">
+      <h1 className="mt-12 text-3xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">Let's make the Perfect Solution for Your Business</h1>
+      <section className="rounded-lg bg-gray-200 bg-opacity-50 overflow-hidden py-12 md:py-24 px-4">
         <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center mb-8 bg-black rounded-full pt-1 pb-1">
           {services.map((service) => (
             <button

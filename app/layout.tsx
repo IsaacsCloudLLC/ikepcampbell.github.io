@@ -73,8 +73,7 @@ export default function RootLayout({
         <div className="sticky top-0 z-50 dark:bg-black">
           <Navbar />
         </div>
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-
+        <main className="flex-auto min-h-screen min-w-0 flex flex-col px-2 md:px-0 bg-[url('/bg.jpg')]">
           {children}
           <Footer />
           <Analytics />
@@ -82,6 +81,6 @@ export default function RootLayout({
         </main>
       </body>
       <GoogleAnalytics gaId="G-21M7CHET8L" />
-    </html>
+    </html >
   )
 }

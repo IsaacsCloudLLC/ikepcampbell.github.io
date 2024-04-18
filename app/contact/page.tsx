@@ -29,13 +29,13 @@ function GitHubIconLight() {
 }
 export default function Page() {
     return (
-        <div>
+        <div >
             <Head>
                 <title>Contact | Isaacs Cloud </title>
                 <meta name="description" content="Looking for a website designer in the Quad Cities? I'm Isaac Campbell, and I specialize in crafting beautiful and effective websites that grow businesses. Let's get started on your project today! Reach out to me on Github (ikepcampbell) or LinkedIn, or email me at support@isaacs.cloud." />
                 <meta name="keywords" content="Quad Cities website design, web developer Quad Cities, Iowa, freelance web design, Davenport website design, Bettendorf website design, DeWitt website design, Moline website design, East Moline website design, Isaac Campbell web design, contact Isaac Campbell" />
             </Head>
-            <h1 className="text-3xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">Contact Me</h1>
+            <h1 className="mt-12 text-3xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">Contact Me</h1>
             <section className="rounded-lg bg-gradient-to-r from-gray-200 to-gray-100 p-4">
                 <p className="text-xl font-medium text-center mt-8 text-gray-800 dark:text-gray-600 pb-4">
                     I'm always open to projects and connections! Follow me on Github and LinkedIn.

@@ -18,7 +18,7 @@ export function Navbar() {
 
 
   return (
-    <aside className="-ml-2  mb-16 tracking-tight">
+    <aside className="-ml-2 tracking-tight">
       <div className="z-50">
         <svg
           className="md:hidden lg:hidden absolute left-4 top-2 h-12 w-12 text-white-700 cursor-pointer"
@@ -57,9 +57,8 @@ export function Navbar() {
         </button>
 
         <nav
-          className={`flex bg-gradient-to-r  from-teal-400 to-teal-700 flex-col md:flex-row space-x-8 items-start px-4 overflow-hidden transition-all duration-300 ease-in-out ${
-            isOpen ? 'absolute top-full right-0 md:static' : 'hidden md:flex'
-          }`}
+          className={`flex pb-4 pt-4 bg-gradient-to-r from-teal-400 to-teal-700 flex-col md:flex-row space-x-8 items-start px-4 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'absolute top-full right-0 md:static' : 'hidden md:flex'
+            }`}
           id="nav"
         >
           <div className={`flex flex-col relative right-0 md:hidden ${isOpen ? '' : 'hidden'}`}>
@@ -67,7 +66,7 @@ export function Navbar() {
               <a
                 key={path}
                 href={path}
-                className="text-xl text-white dark:text-white hover:text-neutral-200 hover:font-semibold py-1 px-4 mt-1 right-0 mb-1" 
+                className="text-xl text-white dark:text-white hover:text-neutral-200 hover:font-semibold py-1 px-4 mt-1 right-0 mb-1"
                 onClick={toggleMenu}
               >
                 {name}
@@ -79,7 +78,7 @@ export function Navbar() {
               <a
                 key={path}
                 href={path}
-                className="transition-all text-xl text-white dark:text-white hover:font-semibold dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                className="transition-all text-2xl text-white dark:text-white hover:font-semibold dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
               >
                 {name}
               </a>
