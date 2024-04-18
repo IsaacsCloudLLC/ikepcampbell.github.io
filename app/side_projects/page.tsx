@@ -1,11 +1,6 @@
 
 import React from 'react';
-
-
-export const metadata = {
-    title: 'Projects',
-    description: 'Some of the Current and Past Projects Ive done.',
-}
+import Head from 'next/head';
 
 // Define your project data
 const projects = [
@@ -53,6 +48,11 @@ function ProjectCard({ project }) {
 export default function Page() {
     return (
         <div>
+            <Head>
+                <title>Side Projects | Isaacs Cloud</title>
+                <meta name="description" content="Explore Isaac Campbell's personal projects showcasing his skills in mobile app development and game development. See projects like ScoreKeep (mobile scoring app) and Spirithaus (game jam entry). Get a feel for Isaac's capabilities and creative drive!" />
+                <meta name="keywords" content="Isaac Campbell side projects, mobile app development, game development, ScoreKeep app, Spirithaus game, mobile scoring app, game jam entry" />
+            </Head>
             <h1 className="text-3xl md:text-5xl font-bold text-center dark:text-white mb-8">Side Projects</h1>
             <section className="rounded-lg relative bg-gradient-to-r from-teal-400 to-teal-700 overflow-hidden py-12 px-4 md:py-24 md:px-8">
                 <p className="text-xl md:text-2xl text-white text-center mb-8">

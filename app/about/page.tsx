@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div>
       <Head>
-        <title>About Us</title>
+        <title>About Us | Isaacs Cloud</title>
         <meta name="description" content="Learn more about Isaacs Cloud, our team, and our mission." />
         <meta name="keywords" content="website design Quad Cities, cloud solutions Iowa, DevOps services" />
         <meta property="og:image" content="/profile.jpeg" />
