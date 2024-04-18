@@ -12,7 +12,7 @@ const projects = [
     {
         title: "ScoreKeep - Mobile",
         description: "ScoreKeep - Mobile is the FREE must-have app for keeping score in all your favorite games and matches! From board games to sports, ScoreKeep makes it effortless to track scores and stay ahead of the competition. If you get the point, we'll make sure to remember it.  ",
-        link: "https://google.com",
+        link: "https://apps.apple.com/us/app/scorekeep-mobile/id6480422023",
         privacy_policy: "scorekeep.html",
         image: "scorekeep.png",
         view: "in App Store"
@@ -54,7 +54,7 @@ export default function Page() {
     return (
         <div>
             <h1 className="text-3xl md:text-5xl font-bold text-center dark:text-white mb-8">Side Projects</h1>
-            <section className="rounded-lg relative bg-gradient-to-r from-teal-400 to-teal-700 overflow-hidden py-12 px-4 md:py-24 md:px-8"> 
+            <section className="rounded-lg relative bg-gradient-to-r from-teal-400 to-teal-700 overflow-hidden py-12 px-4 md:py-24 md:px-8">
                 <p className="text-xl md:text-2xl text-white text-center mb-8">
                     Beyond client work, here's a peek into some personal projects I've undertaken to experiment, learn new skills, and build a diverse portfolio. Feel free to explore these projects to get a better sense of my capabilities and creative drive.
                 </p>
