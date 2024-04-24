@@ -137,13 +137,13 @@ export default function ServicesPage() {
   };
 
   return (
-    <div className='z-10'>
+    <div className='z-10 mt-24 text-center'>
       <Head>
         <title>Quad Cities Website Design & Web Analytics | Isaacs Cloud</title>
         <meta name="description" content="Grow your business with beautiful, user-friendly websites and data-driven web analytics. I offer website design, web development, and analytics solutions in the Quad Cities (Davenport, Bettendorf, etc.) - Free Consultation!" />
         <meta name="keywords" content="Quad Cities website design, Quad Cities web developer, web design Davenport, web design Bettendorf, web design Iowa, web analytics Quad Cities, analytics Davenport, analytics Bettendorf, Isaac Campbell web design" />
       </Head>
-      <h1 className="mt-12 lg:text-6xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">Let's make the Perfect Solution for Your Business</h1>
+      <h1 className="mt-12 lg:text-6xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">The Perfect Solutions For You</h1>
       <section className="rounded-lg bg-gray-200 bg-opacity-30 overflow-hidden py-12 md:py-24 px-4">
         <div className="flex md:flex-row items-center md:items-stretch justify-center mb-8 bg-white rounded-full pt-1 pb-1">
           {services.map((service) => (

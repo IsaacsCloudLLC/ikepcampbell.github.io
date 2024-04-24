@@ -76,7 +76,7 @@ export default function RootLayout({
       <div className="fixed w-full top-0 z-50">
         <Navbar />
       </div>
-      <main className="flex-auto min-h-screen min-w-0 flex flex-col px-2 md:px-0 z-10 absolute top-0"> 
+      <main className="flex-auto min-h-screen min-w-0 flex flex-col px-2 md:px-0 z-10 absolute top-0 w-full"> 
         {children}
         <Footer />
         <Analytics />

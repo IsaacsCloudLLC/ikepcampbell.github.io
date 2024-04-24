@@ -29,7 +29,7 @@ function GitHubIconLight() {
 }
 export default function Page() {
     return (
-        <div className='z-10' >
+        <div className='z-10 mt-24'>
             <Head>
                 <title>Contact | Isaacs Cloud </title>
                 <meta name="description" content="Looking for a website designer in the Quad Cities? I'm Isaac Campbell, and I specialize in crafting beautiful and effective websites that grow businesses. Let's get started on your project today! Reach out to me on Github (ikepcampbell) or LinkedIn, or email me at support@isaacs.cloud." />
