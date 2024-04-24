@@ -47,7 +47,7 @@ function ProjectCard({ project }) {
 
 export default function Page() {
     return (
-        <div>
+        <div className='z-10'>
             <Head>
                 <title>Side Projects | Isaacs Cloud</title>
                 <meta name="description" content="Explore Isaac Campbell's personal projects showcasing his skills in mobile app development and game development. See projects like ScoreKeep (mobile scoring app) and Spirithaus (game jam entry). Get a feel for Isaac's capabilities and creative drive!" />

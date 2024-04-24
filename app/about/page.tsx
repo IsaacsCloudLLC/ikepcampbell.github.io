@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 export default function Page() {
   return (
-    <div>
+    <div className="z-10">
       <Head>
         <title>About Us | Isaacs Cloud</title>
         <meta name="description" content="Learn more about Isaacs Cloud, our team, and our mission." />

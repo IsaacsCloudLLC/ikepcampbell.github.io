@@ -69,17 +69,21 @@ export default function RootLayout({
         <meta property="og:image" content="/logo.jpg" />
 
       </head>
-      <body className="antialiased lg:mx-auto bg-[url('/bg.jpg')]">
-        <div className="sticky top-0 z-50">
-          <Navbar />
-        </div>
-        <main className="flex-auto min-h-screen min-w-0 flex flex-col px-2 md:px-0">
-          {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </main>
-      </body>
+  <body className="antialiased lg:mx-auto z-10">
+    <div className="relative z-10">
+      <section className="fixed top-0 left-0 w-full h-full overflow-hidden z-0 bg-scroll bg-[url('/bg.jpg')]"> 
+      </section>
+      <div className="fixed w-full top-0 z-50">
+        <Navbar />
+      </div>
+      <main className="flex-auto min-h-screen min-w-0 flex flex-col px-2 md:px-0 z-10 absolute top-0"> 
+        {children}
+        <Footer />
+        <Analytics />
+        <SpeedInsights />
+      </main>
+    </div>
+  </body>
       <GoogleAnalytics gaId="G-21M7CHET8L" />
     </html >
   )

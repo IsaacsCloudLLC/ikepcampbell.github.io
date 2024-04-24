@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const RoadmapItem = ({ title, description }) => {
   return (
-    <li className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+    <li className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 z-10">
       <div className="md:w-1/5">
         <span className="w-2 h-12 md:h-16 lg:relative lg:left-24 bg-yellow-200 rounded-full flex items-center justify-center text-white"></span>
       </div>
@@ -16,25 +16,29 @@ const RoadmapItem = ({ title, description }) => {
 
 export default function Page() {
   return (
-    <div className="mb-24">
-      <header className="mt-12 relative left-0 w-full flex flex-col items-center justify-center py-4 text-white">
-        <h1 className="text-2xl md:text-4xl text-center font-bold">Ready to stand out online?</h1>
-        <h2 className="text-4xl md:text-6xl font-bold tracking-widest leading-tight mb-2 text-center">
-          Let's Build a Website That{' '}
-          <span className="bg-gradient-to-r from-yellow-100 to-white inline-block text-transparent bg-clip-text">
-            Sparks
-          </span>{' '}
-
-          Engagement
-
-        </h2>
-        <p className="text-lg md:text-xl text-center">
-          Your Brand. Your Vision. My Expertise. Let's build your future together.
-        </p>
-
+    <div className="mb-24 relative z-10">
+      <div className="relative h-full w-full">
+        <video autoPlay loop muted className='absolute top-0 left-0 w-full h-full object-cover z-10 grayscale-40'>
+          <source src="/home.mp4" type="video/mp4"/>
+        </video>
+        <header className="relative left-0 w-full flex flex-col items-center justify-center py-4 text-white z-10">
+        <div className="z-10 relative mt-24">
+          <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-center font-bold">Ready to stand out online?</h1>
+          <h2 className="lg:text-7xl md:text-6xl font-bold tracking-widest leading-tight mb-2 text-center ">
+            Let's Build a Website That{' '}
+            <span className="bg-gradient-to-r from-yellow-100 to-white inline-block text-transparent bg-clip-text">
+              Sparks
+            </span>{' '}
+            Engagement
+          </h2>
+          <p className="lg:text-2xl md:text-xl text-center">
+            Your Brand. Your Vision. My Expertise. Let's build your future together.
+          </p>
+        </div>
       </header>
-      <section className="rounded-lg relative top-10 mb-20  overflow-hidden text-white">
-        <div className="hero bg-slate-300 bg-opacity-40 text-white py-16 md:py-24 px-4 flex flex-col items-center justify-center">
+      
+      <section className="rounded-lg relative overflow-hidden text-white z-10">
+        <div className="bg-slate-300 bg-opacity-40 text-white py-16 md:py-24 px-4 flex flex-col items-center justify-center">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 md:mb-8">
             Boost Your Business with a Winning Website
           </h2>
@@ -51,22 +55,29 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <h2 className="text-4xl md:text-6xl font-bold text-center mb-8">How we'll make a site</h2>
-      <h2 className="text-4xl md:text-6xl font-bold text-center mb-12">
-        that turns{' '}
-        <span className="bg-gradient-to-r from-yellow-200 to-white  inline-block text-transparent bg-clip-text">traffic</span>{' '}
-        into{' '}
-        <span className="bg-gradient-to-r from-yellow-200 to-white inline-block text-transparent bg-clip-text">sales</span>
-      </h2>
-      <section className="flex flex-col md:flex-row md:justify-between items-center py-12 md:py-20 px-4 bg-slate-100 bg-opacity-80 rounded-lg">
-        <div className="w-full md:w-1/2 mb-8 md:mb-0 md:order-2">
+      </div>
+      <div className='relative p-1 bg-gray-800 z-10 mb-10'></div>
+    
+      <section className="z-10">
+        <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 z-10">How we'll make a site</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-center mb-12">
+          that turns{' '}
+          <span className="bg-gradient-to-r from-yellow-200 to-white  inline-block text-transparent bg-clip-text">traffic</span>{' '}
+          into{' '}
+          <span className="bg-gradient-to-r from-yellow-200 to-white inline-block text-transparent bg-clip-text">sales</span>
+        </h2>
+      </section>
+
+      <div className='relative p-1 bg-gray-800 z-10'></div>
+      <section className="flex flex-col md:flex-row md:justify-between items-center py-12 md:py-20 px-4 bg-slate-100 bg-opacity-80 z-10">
+        <div className="w-full md:w-1/2 mb-8 md:mb-0 md:order-2 z-10">
           <img
             src="roadmap.png"
             alt="Planning to make a captivating website showcasing a business"
             className="rounded-lg shadow-md mx-auto md:mx-0"
           />
         </div>
-        <div className="w-full md:w-1/2 md:order-1 px-4 space-y-8">
+        <div className="w-full md:w-1/2 md:order-1 px-4 space-y-8 z-10">
           <ul className="flex flex-col space-y-6 items-center md:items-start">
             <RoadmapItem
               title="Consultation"

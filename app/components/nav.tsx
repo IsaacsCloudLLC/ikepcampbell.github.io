@@ -70,7 +70,7 @@ export function Navbar() {
 
         <nav
           className={`flex pb-4 pt-4 flex-col md:flex-row space-x-8 items-start px-4 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'absolute top-full right-0 md:static bg-black' : 'hidden md:flex'
-            } ${isScrolled ? 'bg-black' : ''} `}
+            } ${isScrolled ? 'bg-gray-800' : ''} `}
           id="nav"
         >
           <div className={`flex flex-col relative right-0 md:hidden ${isOpen ? '' : 'hidden'}`}>

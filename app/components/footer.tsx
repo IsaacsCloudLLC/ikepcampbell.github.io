@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="mt-16 mb-16 flex justify-center">
+    <footer className="mt-16 mb-16 flex justify-center z-10">
       <p className="mt-8 items-center text-xl text-white">
         © {new Date().getFullYear()} Isaacs Cloud LLC
       </p>
