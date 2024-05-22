@@ -18,46 +18,46 @@ export default function Page() {
   return (
     <div className="mb-24 relative z-10">
       <div className="relative h-full w-full">
-        <video autoPlay loop muted className='absolute top-0 left-0 w-full h-full object-cover z-10 grayscale-40'>
-          <source src="/home.mp4" type="video/mp4"/>
+        <video autoPlay loop muted playsInline className='absolute top-0 left-0 w-full h-full object-cover z-10'>
+          <source src="/home.mp4" type="video/mp4" />
         </video>
         <header className="relative left-0 w-full flex flex-col items-center justify-center py-4 text-white z-10">
-        <div className="z-10 relative mt-24">
-          <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-center font-bold">Ready to stand out online?</h1>
-          <h2 className="lg:text-7xl md:text-6xl font-bold tracking-widest leading-tight mb-2 text-center ">
-            Let's Build a Website That{' '}
-            <span className="bg-gradient-to-r from-yellow-100 to-white inline-block text-transparent bg-clip-text">
-              Sparks
-            </span>{' '}
-            Engagement
-          </h2>
-          <p className="lg:text-2xl md:text-xl text-center">
-            Your Brand. Your Vision. My Expertise. Let's build your future together.
-          </p>
-        </div>
-      </header>
-      
-      <section className="rounded-lg relative overflow-hidden text-white z-10">
-        <div className="bg-slate-300 bg-opacity-40 text-white py-16 md:py-24 px-4 flex flex-col items-center justify-center">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 md:mb-8">
-            Boost Your Business with a Winning Website
-          </h2>
-          <p className="lg:text-2xl md:text-xl text-center mb-4 md:mb-8">
-            Tired of a website that doesn't convert? Let's build a beautiful and effective website that attracts leads
-            and grows your business.
-          </p>
-          <div className="flex justify-center">
-            <Link href="/services">
-              <button className="px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl bg-gray-800 text-yellow-100 font-bold rounded-full hover:bg-yellow-100 hover:text-gray-800 shadow-md transition-all duration-300">
-                See if the services we offer are a right fit for you!
-              </button>
-            </Link>
+          <div className="z-10 relative mt-24">
+            <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-center font-bold">Welcome To Isaacs Cloud</h1>
+            <h2 className="lg:text-7xl md:text-6xl font-bold tracking-widest leading-tight mb-2 text-center ">
+              Let's Build a Website That{' '}
+              <span className="bg-gradient-to-r from-yellow-100 to-white inline-block text-transparent bg-clip-text">
+                Sparks
+              </span>{' '}
+              Engagement
+            </h2>
+            <p className="lg:text-2xl md:text-xl text-center">
+              Your Brand. Your Vision. My Expertise. Let's build your future together.
+            </p>
           </div>
-        </div>
-      </section>
+        </header>
+
+        <section className="rounded-lg relative overflow-hidden text-white z-10">
+          <div className="bg-slate-300 bg-opacity-40 text-white py-16 md:py-24 px-4 flex flex-col items-center justify-center">
+            <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 md:mb-8">
+              Boost Your Business with a Winning Website
+            </h2>
+            <p className="lg:text-2xl md:text-xl text-center mb-4 md:mb-8">
+              Tired of a website that doesn't convert? Let's build a beautiful and effective website that attracts leads
+              and grows your business.
+            </p>
+            <div className="flex justify-center">
+              <Link href="/services">
+                <button className="px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl bg-gray-800 text-yellow-100 font-bold rounded-full hover:bg-yellow-100 hover:text-gray-800 shadow-md transition-all duration-300">
+                  See if the services we offer are a right fit for you!
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
       <div className='relative p-1 bg-gray-800 z-10 mb-10'></div>
-    
+
       <section className="z-10">
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 z-10">How we'll make a site</h2>
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-12">
