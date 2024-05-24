@@ -14,7 +14,19 @@ const RoadmapItem = ({ title, description }) => {
   );
 };
 
+// Existing ClientLogo component
+function ClientLogo({ clientUrl, clientName, clientLogo }) {
+  return (
+    <div className="client-logo mr-4">
+      <a href={clientUrl}><img src={clientLogo} alt={clientName + ' Logo'} style={{ width: '128px', height: '128px' }} /></a>
+    </div>
+  );
+}
+
 export default function Page() {
+  const clients = [
+    { clientName: 'VCVCLLC', clientLogo: '/volley_culture.png', clientUrl: "https://volleyculturevolleyballclub.com/" },
+  ];
   return (
     <div className="mb-24 relative z-10">
       <div className="relative h-full w-full">
@@ -56,10 +68,21 @@ export default function Page() {
           </div>
         </section>
       </div>
-      <div className='relative p-1 bg-gray-800 z-10 mb-10'></div>
+      <div className='relative p-1 bg-gray-800 z-10 '></div>
+      <section className=" py-12 text-gray-900  bg-slate-100 bg-opacity-40">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-3xl font-bold text-center mb-8 ">We've done work for</h2>
+          <div className="flex flex-wrap justify-center items-center">
+            {clients.map((client, index) => (
+              <ClientLogo key={index} clientName={client.clientName} clientLogo={client.clientLogo} clientUrl={client.clientUrl} />
+            ))}
+          </div>
+        </div>
+      </section>
 
+      <div className='relative p-1 bg-gray-800 z-10 mb-10'></div>
       <section className="z-10">
-        <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 z-10">How we'll make a site</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 z-10 ">How we'll make a site</h2>
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-12">
           that turns{' '}
           <span className="bg-gradient-to-r from-yellow-200 to-white  inline-block text-transparent bg-clip-text">traffic</span>{' '}
