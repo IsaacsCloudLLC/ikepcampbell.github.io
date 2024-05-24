@@ -78,7 +78,7 @@ export function Navbar() {
               <a
                 key={path}
                 href={path}
-                className="text-xl text-white dark:text-white hover:text-neutral-200 hover:font-semibold py-1 px-4 mt-1 right-0 mb-1"
+                className="text-xl text-white dark:text-white hover:text-yellow-100 hover:font-semibold py-1 px-4 mt-1 right-0 mb-1"
                 onClick={toggleMenu}
               >
                 {name}
@@ -90,7 +90,7 @@ export function Navbar() {
               <a
                 key={path}
                 href={path}
-                className={`transition-all text-2xl hover:font-semibold dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1 `}
+                className={`transition-all text-2xl dark:hover:text-yellow-100 flex align-middle relative py-1 px-2 m-1 `}
               >
                 {name}
               </a>

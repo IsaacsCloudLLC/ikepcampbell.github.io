@@ -14,7 +14,6 @@ const RoadmapItem = ({ title, description }) => {
   );
 };
 
-// Existing ClientLogo component
 function ClientLogo({ clientUrl, clientName, clientLogo }) {
   return (
     <div className="client-logo mr-4">
@@ -68,62 +67,65 @@ export default function Page() {
           </div>
         </section>
       </div>
-      <div className='relative p-1 bg-gray-800 z-10 '></div>
-      <section className=" py-12 text-gray-900  bg-slate-100 bg-opacity-40">
+
+      <div className='relative p-1 bg-gray-800 z-10 mb-10'></div>
+      <section className="z-10">
+        <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 z-10 ">See Some Of the Work We've Done</h2>
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-3xl font-bold text-center mb-8 ">We've done work for</h2>
-          <div className="flex flex-wrap justify-center items-center">
+          <div className="flex flex-wrap justify-center items-center mb-12">
             {clients.map((client, index) => (
               <ClientLogo key={index} clientName={client.clientName} clientLogo={client.clientLogo} clientUrl={client.clientUrl} />
             ))}
           </div>
-        </div>
-      </section>
 
-      <div className='relative p-1 bg-gray-800 z-10 mb-10'></div>
-      <section className="z-10">
-        <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 z-10 ">How we'll make a site</h2>
-        <h2 className="text-4xl md:text-6xl font-bold text-center mb-12">
-          that turns{' '}
-          <span className="bg-gradient-to-r from-yellow-200 to-white  inline-block text-transparent bg-clip-text">traffic</span>{' '}
-          into{' '}
-          <span className="bg-gradient-to-r from-yellow-200 to-white inline-block text-transparent bg-clip-text">sales</span>
-        </h2>
+        </div>
       </section>
 
       <div className='relative p-1 bg-gray-800 z-10'></div>
-      <section className="flex flex-col md:flex-row md:justify-between items-center py-12 md:py-20 px-4 bg-slate-100 bg-opacity-80 z-10">
-        <div className="w-full md:w-1/2 mb-8 md:mb-0 md:order-2 z-10">
-          <img
-            src="roadmap.png"
-            alt="Planning to make a captivating website showcasing a business"
-            className="rounded-lg shadow-md mx-auto md:mx-0"
-          />
+
+      <section className="items-center py-12 md:py-20 px-4 bg-slate-100 bg-opacity-80 z-10">
+        <h2 className="text-4xl md:text-6xl text-gray-800 font-bold text-center mb-12">
+          How We'll Make a Site That Turns{' '}
+          <span className="bg-gradient-to-r from-yellow-200 to-white  inline-block text-transparent bg-clip-text">Traffic</span>{' '}
+          into{' '}
+          <span className="bg-gradient-to-r from-yellow-200 to-white inline-block text-transparent bg-clip-text">Sales</span>
+        </h2>
+        <div className='flex flex-col md:flex-row md:justify-between'>
+          <div className="w-full md:w-1/2 mb-8 md:mb-0 md:order-2 z-10">
+            <img
+              src="roadmap.png"
+              alt="Planning to make a captivating website showcasing a business"
+              className="rounded-lg shadow-md mx-auto md:mx-0"
+            />
+          </div>
+          <div className="w-full md:w-1/2 md:order-1 px-4 space-y-8 z-10">
+            <ul className="flex flex-col space-y-6 items-center md:items-start">
+              <RoadmapItem
+                title="Consultation"
+                description="Let's chat about your vision, goals, and target audience. We'll work together to understand your unique needs and craft a website strategy that sets you up for success."
+              />
+              <RoadmapItem
+                title="Conversion-Focused Design"
+                description="We're not going to make a website that not only looks beautiful, but also strategically crafted to convert visitors into paying customers. We'll focus on user experience and clear calls to action to maximize your website's potential."
+              />
+              <RoadmapItem
+                title="Seamless Launch"
+                description="Once your website, powered by WordPress or a custom solution, is polished to perfection, we'll launch it to your customers."
+              />
+              <RoadmapItem
+                title="Secure & Reliable Hosting"
+                description="Offering secure and reliable website hosting so there are no worries about downtime or technical headaches. Your website will be up and running 24/7, showcasing your business to the world."
+              />
+              <RoadmapItem
+                title="Continuous Growth Strategy"
+                description="Your website is a living entity, not a static brochure. We will work with together to develop a data-driven growth strategy that continuously improves your website's performance and keeps you ahead of the curve."
+              />
+            </ul>
+          </div>
+
         </div>
-        <div className="w-full md:w-1/2 md:order-1 px-4 space-y-8 z-10">
-          <ul className="flex flex-col space-y-6 items-center md:items-start">
-            <RoadmapItem
-              title="Consultation"
-              description="Let's chat about your vision, goals, and target audience. We'll work together to understand your unique needs and craft a website strategy that sets you up for success."
-            />
-            <RoadmapItem
-              title="Conversion-Focused Design"
-              description="We're not going to make a website that not only looks beautiful, but also strategically crafted to convert visitors into paying customers. We'll focus on user experience and clear calls to action to maximize your website's potential."
-            />
-            <RoadmapItem
-              title="Seamless Launch"
-              description="Once your website, powered by WordPress or a custom solution, is polished to perfection, we'll launch it to your customers."
-            />
-            <RoadmapItem
-              title="Secure & Reliable Hosting"
-              description="Offering secure and reliable website hosting so there are no worries about downtime or technical headaches. Your website will be up and running 24/7, showcasing your business to the world."
-            />
-            <RoadmapItem
-              title="Continuous Growth Strategy"
-              description="Your website is a living entity, not a static brochure. We will work with together to develop a data-driven growth strategy that continuously improves your website's performance and keeps you ahead of the curve."
-            />
-          </ul>
-        </div>
+
+
       </section>
     </div>
   );
