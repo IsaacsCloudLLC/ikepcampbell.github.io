@@ -90,7 +90,7 @@ export function Navbar() {
               <a
                 key={path}
                 href={path}
-                className={`transition-all text-2xl dark:hover:text-yellow-100 flex align-middle relative py-1 px-2 m-1 `}
+                className={`transition-all text-xl dark:hover:text-yellow-100 flex align-middle relative py-1 px-2 m-1 `}
               >
                 {name}
               </a>

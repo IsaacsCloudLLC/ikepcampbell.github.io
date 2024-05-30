@@ -34,7 +34,7 @@ export default function Page() {
         </video>
         <header className="relative left-0 w-full flex flex-col items-center justify-center py-4 text-white z-10">
           <div className="z-10 relative mt-24">
-            <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-center font-bold">Welcome To Isaacs Cloud</h1>
+            <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-center">Quad Cities Website Design & Software Development</h1>
             <h2 className="lg:text-7xl md:text-6xl font-bold tracking-widest leading-tight mb-2 text-center ">
               Let's Build a Website That{' '}
               <span className="bg-gradient-to-r from-yellow-100 to-white inline-block text-transparent bg-clip-text">
@@ -70,7 +70,7 @@ export default function Page() {
 
       <div className='relative p-1 bg-gray-800 z-10 mb-10'></div>
       <section className="z-10">
-        <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 z-10 ">See Some Of the Work We've Done</h2>
+        <h2 className="lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center mb-8 z-10 ">See Some Of the Work We've Done</h2>
         <div className="container mx-auto">
           <div className="flex flex-wrap justify-center items-center mb-12">
             {clients.map((client, index) => (

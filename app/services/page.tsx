@@ -2,7 +2,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-const services = ['Website Design', 'Web Analytics'];
+const services = ['Website Design', 'Web Analytics', 'Something Else'];
 
 const pricingData = [
   {
@@ -134,6 +134,13 @@ export default function ServicesPage() {
         </div>
       </section>
     ),
+    'Something Else': (
+      <section className="container mx-auto py-20 px-4">
+        <p className="text-gray-800 text-3xl leading-relaxed">
+          If you don’t see what you’re looking for, please reach out! I also specialize in DevOps, cloud solutions, automation, and a variety of other services to meet your needs.
+        </p>
+      </section>
+    ),
   };
 
   return (
@@ -144,7 +151,7 @@ export default function ServicesPage() {
         <meta name="keywords" content="Quad Cities website design, Quad Cities web developer, web design Davenport, web design Bettendorf, web design Iowa, web analytics Quad Cities, analytics Davenport, analytics Bettendorf, Isaac Campbell web design" />
       </Head>
       <h1 className="mt-12 lg:text-6xl md:text-5xl font-bold text-center text-black dark:text-white mb-8">The Perfect Solutions For You</h1>
-      <section className="rounded-lg bg-gray-200 bg-opacity-30 overflow-hidden py-12 md:py-24 px-4">
+      <section className="rounded-lg bg-gray-200 bg-opacity-80 overflow-hidden py-12 md:py-24 px-4">
         <div className="flex md:flex-row items-center md:items-stretch justify-center mb-8 bg-white rounded-full pt-1 pb-1">
           {services.map((service) => (
             <button
